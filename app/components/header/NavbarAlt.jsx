@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Button from './RegisterButton';
+import Image from 'next/image';
 import { List, X } from 'react-bootstrap-icons';
 import logo from "@/assets/images/lq-logo-0.png";
 
@@ -22,7 +23,7 @@ export default function Nav() {
                 <div className='md:flex items-center justify-between bg-white py-3 md:px-10 px-7 bg-transparent'>
                     <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800'>
                         <span className="items-center text-3xl text-indigo-600 mr-1">
-                            <img src={logo} alt='logo' className="w-10 h-10 hover:scale-100 transition-all" />
+                            <Image src={logo} alt='logo' className="w-10 h-10 hover:scale-100 transition-all" />
                         </span>
 
                         <span className="pl-1 text-base/4">

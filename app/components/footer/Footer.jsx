@@ -25,7 +25,7 @@ export default function Footer() {
                                 title="Company"
                                 className="inline-flex items-center"
                             >
-                                <Image src={mainFooterLogo} />
+                                <Image src={mainFooterLogo} alt='' />
                             </a>
 
                             <div className="mt-4 lg:max-w-sm">

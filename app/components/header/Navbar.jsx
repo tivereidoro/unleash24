@@ -27,7 +27,7 @@ export default function Navbar() {
                             title="LQ"
                             className="inline-flex items-center"
                         >
-                            <Image src={mainLogo}
+                            <Image src={mainLogo} alt=''
                                 className='hover:scale-100'
                             />
                         </Link>
