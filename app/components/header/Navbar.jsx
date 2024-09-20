@@ -13,7 +13,6 @@ import RegisterButton from './RegisterButton';
 // logo hex - #ff5816
 
 export default function Navbar() {
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
@@ -32,11 +31,11 @@ export default function Navbar() {
                             />
                         </Link>
 
-                        <ul className="flex items-center hidden space-x-8 lg:flex">
+                        <ul className="items-center hidden space-x-8 lg:flex">
                             <Links />
                         </ul>
 
-                        <ul className="flex items-center hidden space-x-8 lg:flex">
+                        <ul className="items-center hidden space-x-8 lg:flex">
                             <li>
                                 <Link
                                     href="/register"
