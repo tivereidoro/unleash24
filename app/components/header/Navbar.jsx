@@ -16,8 +16,8 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div>
-            <div>
+        <header>
+            <nav>
                 <div className="px-5 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                     <div className="relative flex items-center justify-between">
                         <Link
@@ -68,7 +68,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </nav>
+        </header>
     )
 }

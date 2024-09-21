@@ -38,11 +38,11 @@ export default function Footer() {
                                 </div>
                             </div>
 
-                            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-300 sm:max-w-xs sm:text-left">
+                            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-400 sm:max-w-xs sm:text-left">
                                 Advocating EFFECTIVE leadership
                             </p>
 
-                            <h3 className="text-lg text-center sm:text-left font-medium mt-4 text-gray-300">Follow us:</h3>
+                            <h3 className="text-lg text-center sm:text-left font-medium mt-4 text-gray-400">Follow us:</h3>
 
                             <ul className="mt-4 lg:mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
                                 <li>
@@ -98,83 +98,83 @@ export default function Footer() {
 
                         <div className="grid grid-cols-1 pt-6 md:pt-0 lg:pt-0 gap-8 lg:gap-5 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 lg:grid-col-3 md:border-0 lg:border-0 border-t border-gray-300">
                             <div className="text-center sm:text-left">
-                                <p className="text-lg font-medium text-gray-900">Who Are We</p>
+                                <p className="text-lg font-medium text-gray-400">Who Are We</p>
 
                                 <ul className="mt-4 lg:mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#">
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
                                             About Us
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#">
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
                                             Meet the Team
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#">
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
                                             Success Stories
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#"> Community Events </a>
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#"> Community Events </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#"> Blog/Resource Library </a>
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#"> Blog/Resource Library </Link>
                                     </li>
                                 </ul>
                             </div>
 
                             <div className="text-center sm:text-left">
-                                <p className="text-lg font-medium text-gray-900">Our Services</p>
+                                <p className="text-lg font-medium text-gray-400">Our Services</p>
 
                                 <ul className="mt-4 lg:mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#">
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
                                             Remote Job Listings
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#">
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
                                             CV Writing/Review
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#">
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
                                             Live Trainings
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#"> Mentorship </a>
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#"> Mentorship </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-gray-700 underline transition hover:text-gray-700/75" href="#"> Support &amp; Network </a>
+                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#"> Support &amp; Network </Link>
                                     </li>
                                 </ul>
                             </div>
 
                             <div className="text-center sm:text-left">
-                                <p className="text-lg font-medium text-gray-900">Contact Us</p>
+                                <p className="text-lg font-medium text-gray-400">Contact Us</p>
 
                                 <ul className="mt-4 lg:mt-8 space-y-4 text-sm">
                                     <li>
                                         {/* rtl:sm:justify-end */}
-                                        <a
+                                        <Link
                                             className="flex items-center justify-center gap-1.5 ltr:sm:justify-start "
                                             href="#"
                                         >
-                                            <span className="flex-1 text-gray-700">
+                                            <span className="flex-1 text-gray-500">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className="size-5 shrink-0 inline-block text-gray-900"
+                                                    className="size-5 shrink-0 inline-block text-gray-500"
                                                     fill="none"
                                                     viewBox="0 0 24 24"
                                                     stroke="currentColor"
@@ -188,18 +188,18 @@ export default function Footer() {
                                                 </svg>
                                                 &nbsp;
                                                 contact@leadersquarters.com</span>
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a
+                                        <Link
                                             className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                             href="#"
                                         >
-                                            <span className="flex-1 text-gray-700">
+                                            <span className="flex-1 text-gray-500">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className="size-5 shrink-0 text-gray-900 inline-block"
+                                                    className="size-5 shrink-0 text-gray-500 inline-block"
                                                     fill="none"
                                                     viewBox="0 0 24 24"
                                                     stroke="currentColor"
@@ -211,7 +211,7 @@ export default function Footer() {
                                                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                                                     />
                                                 </svg>&nbsp;+234 805 247 5173</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -222,26 +222,26 @@ export default function Footer() {
                         <div className="text-center sm:flex sm:justify-between sm:text-left">
                             <p className="text-sm text-gray-500">
                                 {/* Copyright and privacy policy session */}
-                                <a
-                                    className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                                <Link
+                                    className="inline-block text-[#ff5816] underline transition hover:text-[#ff5816]/75"
                                     href="#"
                                 >
                                     Terms & Conditions
-                                </a>
+                                </Link>
 
                                 &nbsp;
                                 <span>&middot;</span>
                                 &nbsp;
 
-                                <a
-                                    className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                                <Link
+                                    className="inline-block text-[#ff5816] underline transition hover:text-[#ff5816]/75"
                                     href="#"
                                 >
                                     Privacy Policy
-                                </a>
+                                </Link>
                             </p>
 
-                            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; {new Date().getFullYear()} || Remote Tribe Africa. &nbsp; All rights reserved.</p>
+                            <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; {new Date().getFullYear()} || Leaders Quarters. &nbsp; All rights reserved.</p>
                         </div>
                     </div>
                 </div>
