@@ -1,9 +1,12 @@
-
+import LQ_Hero from "@/components/hero/LQ_Hero";
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20">
-      <h2>UNLEASH 2024</h2>
-    </main>
-  );
+    return (
+
+        <main className="w-full flex items-center justify-center sm:items-start">
+            <LQ_Hero />
+        </main>
+
+    );
 }

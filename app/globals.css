@@ -3,42 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 * {
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  background: white;
-}
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* 
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  background: var(--background); 
 */
 
+body {
+  font-family: var(--font-poppins)
+}
+
 @layer utilities {
+  .wrapper {
+    @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+  }
   .text-balance {
     text-wrap: balance;
   }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+}
+
+.hero-bg {
+  background-image: url('https://images.pexels.com/photos/28378126/pexels-photo-28378126/free-photo-of-pastor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
 }
