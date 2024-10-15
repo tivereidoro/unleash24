@@ -1,8 +1,6 @@
 import "@/app/globals.css";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,12 +26,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* ${geistSans.variable} ${geistMono.variable} */}
-      <body className={`${poppins.variable} hero-bg bg-fixed bg-center bg-cover antialiased`}>
-        <div className="absolute top-0 left-0 right-0 bottom-0 -z-[2] bg-black/70" />
-        <Header />
+      <body className={`${poppins.variable} antialiased`}>
         {children}
-        <Footer />
       </body>
     </html>
   );

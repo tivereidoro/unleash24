@@ -3,11 +3,11 @@ import Navbar from '@/components/navbar/Navbar';
 import Unleash2024 from '@/components/banner/Unleash2024';
 
 
-export default function Header() {
+export default function Header({ menu1 }) {
     return (
         <>
             {/* <Unleash2024 /> */}
-            <Navbar />
+            <Navbar menu1={menu1} />
         </>
     )
 }

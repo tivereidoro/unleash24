@@ -7,7 +7,7 @@ import footerLogo from '@/app/assets/images/lq-black40.png';
 export default function Footer() {
     return (
         <footer className="">
-            <div className="relative mt-16 bg-[#092a5f]">
+            <div className="relative bg-[#092a5f]">
                 <svg
                     className="absolute top-0 w-full h-8 -mt-5 sm:-mt-10 sm:h-16 text-[#092a5f]"
                     preserveAspectRatio="none"
@@ -137,18 +137,6 @@ export default function Footer() {
                                 <ul className="mt-4 lg:mt-8 space-y-4 text-sm">
                                     <li>
                                         <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
-                                            Remote Job Listings
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
-                                            CV Writing/Review
-                                        </Link>
-                                    </li>
-
-                                    <li>
-                                        <Link className="text-gray-500 underline transition hover:text-[#ff5816]/75" href="#">
                                             Live Trainings
                                         </Link>
                                     </li>
@@ -187,9 +175,7 @@ export default function Footer() {
                                                         strokeLinejoin="round"
                                                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                                     />
-                                                </svg>
-                                                &nbsp;
-                                                contact@leadersquarters.com</span>
+                                                </svg>&nbsp;admin@leadersquarters.com</span>
                                         </Link>
                                     </li>
 

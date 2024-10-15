@@ -47,28 +47,27 @@ const callsToAction = [
     { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
 
-export default function Navbar() {
+export default function Navbar({ menu1 = [{ name: "About", link: "/about" }, { name: "Events", link: "/events" }] }) {
+
     const [header, setHeader] = useState(false);
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     function scrollHeader() {
-        if (window.scrollY >= 30) {
+        if (window.scrollY >= 20) {
             setHeader(true)
         } else {
             setHeader(false)
         }
     }
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', scrollHeader);
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHeader);
 
-    //     return () => {
-    //         window.addEventListener('scroll', scrollHeader);
-    //     }
-    // }, [])
-
-    window.addEventListener('scroll', scrollHeader);
+        return () => {
+            window.addEventListener('scroll', scrollHeader);
+        }
+    }, [])
 
     return (
         <div className="relative">
@@ -107,16 +106,19 @@ export default function Navbar() {
                     <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
                         {/* Navbar links without dropdown */}
-                        <Link href="/about" className="text-sm font-semibold leading-6">
-                            About LQ
-                        </Link>
+                        {menu1.map((item) => <Link key={1..toExponential} href={item.link} className="text-sm font-semibold leading-6">
+                            {item.name}
+                        </Link>)}
 
-                        <Link href="/unleash" className="text-sm font-semibold leading-6 ">
-                            Unleash
+                        {/* <Link href="/unleash" className="text-sm font-semibold leading-6 ">
+                            {menu2}
                         </Link>
                         <Link href="/unk" className="text-sm font-semibold leading-6 ">
-                            Company
+                            {menu3}
                         </Link>
+                        <Link href="/unk" className="text-sm font-semibold leading-6 ">
+                            {menu4}
+                        </Link> */}
 
                         {/* Menu option with dropdown */}
                         <Popover className="relative">
